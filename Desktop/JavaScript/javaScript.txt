@@ -1,0 +1,212 @@
+
+	JAVASCRIPT
+                                                                                                                                                                                                                                                                                 	                                                                                                                                        
+objects and document object model(DOM)
+work with asynchronous javascript, including callbacks,promises and the "async/wait" syntax
+mavin
+interact with external APIS(Application Programming Interfaces)
+
+JIT COMPILATION
+
+				Before run-time
+					+
+					+
+					+
+		source code ------- syntax tree -------- jit
+			parse			  compiler
+							/
+							/byte code}At run-time in jit compiler
+						   / translate
+						   /
+			Execute		-------	machine code
+		
+list of javaScript Engine:
+
+1. v8 - used by google chrome
+2. Rhino - used by java applicatios
+3. SpiderMonkey - used by Mozilla Firefox
+4. JavaScriptCore - used by swift, objective-c, and c- based apps and also safari
+5. Chakra(JavaScript) - used by Microsoft Edge
+6. Nashorn - used by jvm
+7. JerryScript - used by the internet of things   
+
+three key word
+**var
+**let
+**const
+
+types of primitive category
+~~ Boolean
+~~ Number
+~~ Null (e.g. var name = null)
+~~ Undedefined (e.g. var name; ,name = ADA) 
+~~ String(E.g var name = " chinedu ")
+
+types of non primitive
+~~ Object
+~~ Date
+~~ Array
+
+.rememberKEYWORD
+let user = {
+	firstName : "Steve",
+	secondName: "Daniel"
+	age : "12",
+	greet : function(){
+
+		return ("hello")
+	}
+};
+
+
+console.log(user.lastName)
+console.log(user["firstName"])
+
+user.firstName = "Favour";
+user.sex = "female"
+console.log(user.greet)
+
+------------------------
+
+let keys = object.keys(user);
+console.log(keys);
+let entries = Object.entires(user);
+console.log(entries)
+let values = Object.values(user);
+console.log(values)
+
+
+--- when it has a parameter it dependent on the function.
+OBJECTS
+(keys)
+(values)
+(entries)
+
+
+----LOOPS----
+
+let number = 11;
+
+for (let index = 0; index < number; index){
+	console.log(index);
+};
+
+let number = 11;
+let index = 1;
+
+for (;index<number;index++){
+	console.log(index);
+
+};
+let number = [1,2,3,4,5];
+let person {
+	name : "chi"
+	age : "3"
+
+}
+
+for (const number of numbers){
+
+	console.log(number)
+}
+for(const data of person){
+
+	console.log(data)
+}
+
+const numbers = [1,2,3,4,5]
+
+for(let number of numbers){
+	if(number > 2){
+		number = 5;
+	}
+}
+
+You cannot use FOR OF to iterate an object because object are not iterable.it can only print values
+is not for objects
+not iterable...
+ 
+
+for in behaves the same way your traditional for loop behaves
+
+const numbers =[1,2,3,4,5,6];
+
+for(let index in numbers){
+
+	console.log(index)
+	console.log(numbers[index])
+	console.log("")
+	console.log(index + "" + numbers[index])
+}
+
+for in object and arrays but for for of it cant b used in objects
+
+let count = 0;
+while(count < 5){
+	console.log(count)
+	count++;
+}
+
+
+let number = [1,2,3,4,5];
+letindex = 0;
+
+
+
+do{
+	console.log(numbers[index]);
+	index++;
+}while(index < numbers.length);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

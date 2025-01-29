@@ -1,0 +1,13 @@
+function car(){
+
+		make : 'Toyota'
+		model : 'Camry',
+		year : '2021'
+
+
+	}
+
+for (const data in car){
+
+	console.log(data)
+}
