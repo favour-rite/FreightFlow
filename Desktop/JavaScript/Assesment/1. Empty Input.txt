@@ -1,0 +1,60 @@
+1. Empty Input
+Ensure the method handles empty input correctly.
+
+
+@Test
+public void testEmptyInput() {
+    String input = "";
+    boolean result = depositSymbol(input);
+    assertFalse(result); // Assuming false indicates failure
+}
+2. Null Input
+Check how the method behaves when given a null input.
+
+
+@Test
+public void testNullInput() {
+    String input = null;
+    boolean result = depositSymbol(input);
+    assertFalse(result); // Assuming false indicates failure
+}
+3. Special Characters
+Test the method with various special characters.
+
+
+@Test
+public void testSpecialCharacters() {
+    String input = "!@#$%^&*()";
+    boolean result = depositSymbol(input);
+    assertTrue(result); // Assuming true indicates success
+}
+4. Unicode Characters
+Ensure the method can handle Unicode characters.
+
+
+@Test
+public void testUnicodeCharacters() {
+    String input = "你好世界"; // "Hello World" in Chinese
+    boolean result = depositSymbol(input);
+    assertTrue(result); // Assuming true indicates success
+}
+5. Long Strings
+Test with very long strings to check for performance or overflow issues.
+
+
+@Test
+public void testLongString() {
+    String input = "a".repeat(10000); // A very long string of 'a's
+    boolean result = depositSymbol(input);
+    assertTrue(result); // Assuming true indicates success
+}
+6. Mixed Input
+Test with a mix of valid and invalid characters.
+
+
+@Test
+public void testMixedInput() {
+    String input = "abc123!@#";
+    boolean result = depositSymbol(input);
+    assertTrue(result); // Assuming true indicates success
+}

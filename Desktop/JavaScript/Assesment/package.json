@@ -1,0 +1,11 @@
+{
+  "name": "assessment",
+  "version": "1.0.0",
+  "main": "car.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
